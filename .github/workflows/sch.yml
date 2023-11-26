@@ -28,7 +28,7 @@ jobs:
 
     - name: Hook
       run: |
-        #python ./hooks/hook.py
+        python ./hooks/hook.py
         
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
