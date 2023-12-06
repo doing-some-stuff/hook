@@ -58,9 +58,10 @@ def hookgenerate(contentlist):
       webhook.execute()
       entrno=len(sentshows)
       title=f"{show[2]} - Episode {show[1]}\n"
-      if entrno>10:
+      if entrno>18:
         with open(sentlogs,"w") as ff:
-          pass
+          newsshow=''.join(sentshows[8:])
+          ff.write(newsshow)
         with open(errlogs,"w") as ff:
           pass
         
