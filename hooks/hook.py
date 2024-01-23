@@ -30,11 +30,15 @@ except Exception as ee:
       
 def new():
   
-    checker = cloudscraper.create_scraper()
+    checker = cloudscraper.create_scraper(browser={
+        'browser': 'firefox',
+        'platform': 'windows',
+        'mobile': False
+    })
     
     link = 'https://animepahe.com/api?m=airing&page=1'
 
-    response = checker.get(link, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"}).json()
+    response = checker.get(link).json()
     
     allshowsreleased=[
         [
