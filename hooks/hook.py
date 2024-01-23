@@ -5,7 +5,6 @@ import re
 import os
 from dotenv import load_dotenv as env
 import datetime
-import cloudscraper
 
 sentlogs="./hooks/hook/contentlist.log"
 errlogs="./hooks/hook/err.log"
@@ -29,16 +28,10 @@ except Exception as ee:
     exit()
       
 def new():
-  
-    checker = cloudscraper.create_scraper(browser={
-        'browser': 'firefox',
-        'platform': 'windows',
-        'mobile': False
-    })
     
     link = 'https://animepahe.com/api?m=airing&page=1'
 
-    response = checker.get(link).json()
+    response = requests.get(link).json()
     
     allshowsreleased=[
         [
