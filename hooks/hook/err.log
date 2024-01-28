@@ -93,3 +93,4 @@ Stacktrace:
 
 2024-01-28 07:48:10.871187||Err: 'WebDriver' object has no attribute 'manage'
 2024-01-28 07:52:10.136670||Err: 'NoneType' object has no attribute 'json'
+2024-01-28 07:54:37.914953||Err: 'Options' object has no attribute 'addArguments'
