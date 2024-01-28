@@ -4,3 +4,4 @@ python-dotenv
 webdriver-manager
 Selenium
 undetected-chromedriver
+chromedriver-binary-auto
