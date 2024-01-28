@@ -45,3 +45,4 @@ Stacktrace:
 #16 0x559cb73a8f34 <unknown>
 #17 0x7f34f4094ac3 <unknown>
 
+2024-01-28 12:50:53.942929||Err: request() takes 1 positional argument but 2 were given
