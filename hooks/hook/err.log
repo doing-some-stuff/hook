@@ -580,3 +580,4 @@ Stacktrace:
 #16 0x557388d3ef34 <unknown>
 #17 0x7ff79c694ac3 <unknown>
 
+2024-01-28 11:09:24.568840||Err: 'NoneType' object has no attribute 'json'
