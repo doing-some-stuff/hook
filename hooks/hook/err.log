@@ -214,3 +214,25 @@ Stacktrace:
 #16 0x55b071634f34 <unknown>
 #17 0x7f57ed094ac3 <unknown>
 
+2024-01-28 08:30:32.207242||Err: Message: unknown error: cannot connect to chrome at 127.0.0.1:50807
+from chrome not reachable
+Stacktrace:
+#0 0x55cd20405d93 <unknown>
+#1 0x55cd200e9177 <unknown>
+#2 0x55cd200d402a <unknown>
+#3 0x55cd20122cf8 <unknown>
+#4 0x55cd201191cb <unknown>
+#5 0x55cd20163b7c <unknown>
+#6 0x55cd201571e3 <unknown>
+#7 0x55cd20127135 <unknown>
+#8 0x55cd2012813e <unknown>
+#9 0x55cd203c9e4b <unknown>
+#10 0x55cd203cddfa <unknown>
+#11 0x55cd203b66d5 <unknown>
+#12 0x55cd203cea6f <unknown>
+#13 0x55cd2039a69f <unknown>
+#14 0x55cd203f3098 <unknown>
+#15 0x55cd203f3262 <unknown>
+#16 0x55cd20404f34 <unknown>
+#17 0x7efeb8894ac3 <unknown>
+
