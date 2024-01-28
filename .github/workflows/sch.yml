@@ -17,9 +17,9 @@ jobs:
 
     steps:
     - name: Set up Chromium 
-      uses: browser-actions/setup-chrome@v1
-      with:
-        chrome-version: 121.0.6100.0
+      id: update
+      run: |
+          node tools/update_chrome_revision.mjs
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
