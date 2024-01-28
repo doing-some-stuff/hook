@@ -91,3 +91,4 @@ Stacktrace:
 
 2024-01-28 07:47:05.509714||Err: Message: Process unexpectedly closed with status 1
 
+2024-01-28 07:48:10.871187||Err: 'WebDriver' object has no attribute 'manage'
