@@ -6,7 +6,6 @@ import os
 from dotenv import load_dotenv as env
 import datetime
 from selenium import webdriver
-from selenium.webdriver import FirefoxOptions
 import undetected_chromedriver as uc
 
 sentlogs="./hooks/hook/contentlist.log"
