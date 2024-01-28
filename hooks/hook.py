@@ -7,6 +7,7 @@ from dotenv import load_dotenv as env
 import datetime
 from selenium import webdriver
 from selenium.webdriver import FirefoxOptions
+import undetected_chromedriver as uc
 
 sentlogs="./hooks/hook/contentlist.log"
 errlogs="./hooks/hook/err.log"
@@ -32,11 +33,12 @@ except Exception as ee:
 def new():
     
     link = 'https://animepahe.com/api?m=airing&page=1'
-    opts = FirefoxOptions()
-    opts.add_argument("--headless")
-    opts.add_argument("--disable-blink-features=AutomationControlled")
-    webrowse = webdriver.Firefox(options=opts)
-    #webrowse.implicitly_wait(12)
+    options = webdriver.ChromeOptions() 
+    options.headless = True
+    options.add_argument("start-maximized")
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    options.add_experimental_option('useAutomationExtension', False)
+    webrowse = uc.Chrome(options=options)
     response=webrowse.get(link).json()
     webrowse.quit()
     #response = requests.get(link,headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"}).json()
