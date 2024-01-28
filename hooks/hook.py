@@ -33,10 +33,7 @@ except Exception as ee:
 def new():
     
     link = 'https://animepahe.com/api?m=airing&page=1'
-    options = webdriver.ChromeOptions() 
-    options.headless = True
-    options.add_argument("start-maximized")
-    webrowse = uc.Chrome(options=options)
+    webrowse= uc.Chrome()
     response=webrowse.get(link).json()
     webrowse.quit()
     #response = requests.get(link,headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"}).json()
