@@ -35,7 +35,7 @@ def new():
     opts = FirefoxOptions()
     opts.add_argument("--headless")
     webrowse = webdriver.Firefox(options=opts)
-    webrowse.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+    webrowse.implicitly_wait(12)
     response=webrowse.get(link).json()
     webrowse.quit()
     #response = requests.get(link,headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"}).json()
