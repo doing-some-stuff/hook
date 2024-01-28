@@ -33,7 +33,6 @@ def new():
     driver.get('https://nowsecure.nl')
     driver.save_screenshot('./hooks/hook/nowsecure.png')
     driver.quit()
-    exit()
     link = 'https://animepahe.com/api?m=airing&page=1'
     webrowse= uc.Chrome()
     response=webrowse.get(link).json()
