@@ -3,5 +3,4 @@ discord-webhook
 python-dotenv
 Selenium
 undetected-chromedriver
-wheel
 Grab
