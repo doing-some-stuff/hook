@@ -96,3 +96,4 @@ Stacktrace:
 2024-01-28 19:28:24.313731||Err: request() takes 1 positional argument but 2 were given
 2024-01-28 19:36:14.857048||Err: request() takes 1 positional argument but 2 were given
 2024-01-28 19:43:03.983890||Err: request() takes 1 positional argument but 2 were given
+2024-01-28 19:50:01.916691||Err: name 'url' is not defined
