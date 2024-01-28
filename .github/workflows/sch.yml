@@ -22,7 +22,7 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Set up Chromium 
-    - uses: browser-actions/setup-chrome@v1
+      uses: browser-actions/setup-chrome@v1
       with:
         chrome-version: 121.0.6100.0
     - name: Install dependencies
