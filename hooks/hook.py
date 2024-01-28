@@ -31,7 +31,10 @@ except Exception as ee:
     exit()
       
 def new():
-    
+    driver = uc.Chrome(headless=True,use_subprocess=False)
+    driver.get('https://nowsecure.nl')
+    driver.save_screenshot('./hooks/hook/nowsecure.png')
+    driver.quit()
     link = 'https://animepahe.com/api?m=airing&page=1'
     webrowse= uc.Chrome()
     response=webrowse.get(link).json()
