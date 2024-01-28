@@ -2,6 +2,3 @@ requests
 discord-webhook
 python-dotenv
 Selenium
-undetected-chromedriver
-lxml
-Grab
