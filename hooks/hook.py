@@ -36,7 +36,6 @@ def new():
     options = webdriver.ChromeOptions() 
     options.headless = True
     options.add_argument("start-maximized")
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
     webrowse = uc.Chrome(options=options)
     response=webrowse.get(link).json()
