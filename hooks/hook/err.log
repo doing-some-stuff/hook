@@ -1,1 +1,24 @@
 2024-01-28 11:15:21.403677||Err: write() argument must be str, not None
+2024-01-28 11:22:38.513396||Err: Message: unknown error: cannot connect to chrome at 127.0.0.1:46677
+from session not created: This version of ChromeDriver only supports Chrome version 121
+Current browser version is 120.0.6099.0
+Stacktrace:
+#0 0x56117e08dd93 <unknown>
+#1 0x56117dd71337 <unknown>
+#2 0x56117ddabdfb <unknown>
+#3 0x56117ddaaef9 <unknown>
+#4 0x56117dda11cb <unknown>
+#5 0x56117ddebb7c <unknown>
+#6 0x56117dddf1e3 <unknown>
+#7 0x56117ddaf135 <unknown>
+#8 0x56117ddb013e <unknown>
+#9 0x56117e051e4b <unknown>
+#10 0x56117e055dfa <unknown>
+#11 0x56117e03e6d5 <unknown>
+#12 0x56117e056a6f <unknown>
+#13 0x56117e02269f <unknown>
+#14 0x56117e07b098 <unknown>
+#15 0x56117e07b262 <unknown>
+#16 0x56117e08cf34 <unknown>
+#17 0x7f7806c94ac3 <unknown>
+
