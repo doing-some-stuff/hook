@@ -87,3 +87,5 @@ Stacktrace:
 #15 0x559d083a5124 <unknown>
 #16 0x7f2a34494ac3 <unknown>
 
+2024-01-28 07:42:32.852540||Err: Message: Process unexpectedly closed with status 1
+
