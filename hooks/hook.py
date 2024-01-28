@@ -5,6 +5,8 @@ import re
 import os
 from dotenv import load_dotenv as env
 import datetime
+from selenium import webdriver
+ 
 
 sentlogs="./hooks/hook/contentlist.log"
 errlogs="./hooks/hook/err.log"
@@ -30,8 +32,12 @@ except Exception as ee:
 def new():
     
     link = 'https://animepahe.com/api?m=airing&page=1'
-
-    response = requests.get(link,headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"}).json()
+    webrowse = webdriver.Chrome()
+    webrowse.maximize_window()
+    webrowse.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+    response=webrowse.get(link).json()
+    webrowse.quit()
+    #response = requests.get(link,headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"}).json()
     
     allshowsreleased=[
         [
