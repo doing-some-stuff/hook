@@ -17,11 +17,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Install Chrome Version
-      run: |
-          sudo apt-get install -y wget
-          sudo wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo apt-get install ./google-chrome-stable_current_amd64.deb
+    
+    - name: Requirement for build
+      run: sudo apt-get install libcurl4-gnutls-dev librtmp-dev
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
