@@ -120,3 +120,27 @@ Stacktrace:
 #18 0x56287818af34 <unknown>
 #19 0x7f99c8a94ac3 <unknown>
 
+2024-01-28 08:11:45.088330||Err: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: useAutomationExtension
+Stacktrace:
+#0 0x55606c325d93 <unknown>
+#1 0x55606c009337 <unknown>
+#2 0x55606c0314fb <unknown>
+#3 0x55606c032875 <unknown>
+#4 0x55606c02ded6 <unknown>
+#5 0x55606c0821b4 <unknown>
+#6 0x55606c081b6c <unknown>
+#7 0x55606c08346a <unknown>
+#8 0x55606c0771e3 <unknown>
+#9 0x55606c047135 <unknown>
+#10 0x55606c04813e <unknown>
+#11 0x55606c2e9e4b <unknown>
+#12 0x55606c2eddfa <unknown>
+#13 0x55606c2d66d5 <unknown>
+#14 0x55606c2eea6f <unknown>
+#15 0x55606c2ba69f <unknown>
+#16 0x55606c313098 <unknown>
+#17 0x55606c313262 <unknown>
+#18 0x55606c324f34 <unknown>
+#19 0x7fe945c94ac3 <unknown>
+
