@@ -581,3 +581,26 @@ Stacktrace:
 #17 0x7ff79c694ac3 <unknown>
 
 2024-01-28 11:09:24.568840||Err: 'NoneType' object has no attribute 'json'
+2024-01-28 11:11:31.167006||Err: Message: unknown error: cannot connect to chrome at 127.0.0.1:39163
+from session not created: This version of ChromeDriver only supports Chrome version 121
+Current browser version is 120.0.6099.0
+Stacktrace:
+#0 0x5654c06e7d93 <unknown>
+#1 0x5654c03cb337 <unknown>
+#2 0x5654c0405dfb <unknown>
+#3 0x5654c0404ef9 <unknown>
+#4 0x5654c03fb1cb <unknown>
+#5 0x5654c0445b7c <unknown>
+#6 0x5654c04391e3 <unknown>
+#7 0x5654c0409135 <unknown>
+#8 0x5654c040a13e <unknown>
+#9 0x5654c06abe4b <unknown>
+#10 0x5654c06afdfa <unknown>
+#11 0x5654c06986d5 <unknown>
+#12 0x5654c06b0a6f <unknown>
+#13 0x5654c067c69f <unknown>
+#14 0x5654c06d5098 <unknown>
+#15 0x5654c06d5262 <unknown>
+#16 0x5654c06e6f34 <unknown>
+#17 0x7f6131894ac3 <unknown>
+
