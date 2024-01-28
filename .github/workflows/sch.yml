@@ -16,15 +16,16 @@ jobs:
         python-version: [3.8]
 
     steps:
-    - name: Set up Chromium 
-      id: update
-      run: |
-          node tools/update_chrome_revision.mjs
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+    - name: Install Chrome Version
+      run: |
+          sudo apt-get install -y wget
+          sudo wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt-get install ./google-chrome-stable_current_amd64.deb
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
