@@ -6,6 +6,7 @@ import os
 from dotenv import load_dotenv as env
 import datetime
 import undetected_chromedriver as uc
+from grab import Grab
 
 sentlogs="./hooks/hook/contentlist.log"
 errlogs="./hooks/hook/err.log"
@@ -30,14 +31,16 @@ except Exception as ee:
       
 def new():
     link = 'https://animepahe.com/api?m=airing&page=1'
-    webrowse= uc.Chrome(headless=True,use_subprocess=False)
-    response=webrowse.get(link)
-    webrowse.quit()
+    #webrowse= uc.Chrome(headless=True,use_subprocess=False)
+    #response=webrowse.get(link)
+    #webrowse.quit()
+    grab= Grab()
+    response = grab.request(link).json()
     #response = requests.get(link,headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"}).json()
     with open(errlogs,"w") as ff:
       ff.write(response)
       ff.writr("\nHello")
-    response=response.json()
+    #response=response.json()
     allshowsreleased=[
         [
             '{}/{}'.format(x['anime_session'], x['session']),
