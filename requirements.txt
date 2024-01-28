@@ -3,4 +3,5 @@ discord-webhook
 python-dotenv
 Selenium
 undetected-chromedriver
+pyyaml==6.0.1
 Grab
