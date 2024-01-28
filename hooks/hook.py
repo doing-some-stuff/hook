@@ -32,7 +32,7 @@ except Exception as ee:
 def new():
     
     link = 'https://animepahe.com/api?m=airing&page=1'
-    webrowse = webdriver.Chrome()
+    webrowse = webdriver.Firefox()
     webrowse.maximize_window()
     webrowse.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
     response=webrowse.get(link).json()
