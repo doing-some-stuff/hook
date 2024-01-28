@@ -34,8 +34,9 @@ def new():
     link = 'https://animepahe.com/api?m=airing&page=1'
     opts = FirefoxOptions()
     opts.add_argument("--headless")
+    opts.addArguments("--disable-blink-features=AutomationControlled")
     webrowse = webdriver.Firefox(options=opts)
-    webrowse.implicitly_wait(12)
+    #webrowse.implicitly_wait(12)
     response=webrowse.get(link).json()
     webrowse.quit()
     #response = requests.get(link,headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"}).json()
