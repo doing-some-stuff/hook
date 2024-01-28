@@ -350,3 +350,26 @@ Stacktrace:
 #16 0x55e656268f34 <unknown>
 #17 0x7f12b8e94ac3 <unknown>
 
+2024-01-28 08:57:51.583592||Err: Message: unknown error: cannot connect to chrome at 127.0.0.1:52919
+from session not created: This version of ChromeDriver only supports Chrome version 121
+Current browser version is 120.0.6099.0
+Stacktrace:
+#0 0x56071b052d93 <unknown>
+#1 0x56071ad36337 <unknown>
+#2 0x56071ad70dfb <unknown>
+#3 0x56071ad6fef9 <unknown>
+#4 0x56071ad661cb <unknown>
+#5 0x56071adb0b7c <unknown>
+#6 0x56071ada41e3 <unknown>
+#7 0x56071ad74135 <unknown>
+#8 0x56071ad7513e <unknown>
+#9 0x56071b016e4b <unknown>
+#10 0x56071b01adfa <unknown>
+#11 0x56071b0036d5 <unknown>
+#12 0x56071b01ba6f <unknown>
+#13 0x56071afe769f <unknown>
+#14 0x56071b040098 <unknown>
+#15 0x56071b040262 <unknown>
+#16 0x56071b051f34 <unknown>
+#17 0x7fdfa9494ac3 <unknown>
+
