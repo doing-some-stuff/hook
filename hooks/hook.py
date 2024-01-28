@@ -6,7 +6,7 @@ import os
 from dotenv import load_dotenv as env
 import datetime
 from selenium import webdriver
- 
+from selenium.webdriver import FirefoxOptions
 
 sentlogs="./hooks/hook/contentlist.log"
 errlogs="./hooks/hook/err.log"
@@ -32,8 +32,9 @@ except Exception as ee:
 def new():
     
     link = 'https://animepahe.com/api?m=airing&page=1'
-    webrowse = webdriver.Firefox()
-    webrowse.maximize_window()
+    opts = FirefoxOptions()
+    opts.add_argument("--headless")
+    webrowse = webdriver.Firefox(options=opts)
     webrowse.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
     response=webrowse.get(link).json()
     webrowse.quit()
