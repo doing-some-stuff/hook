@@ -1,12 +1,13 @@
 from discord_webhook import DiscordWebhook,DiscordEmbed
-#import requests
+import requests
 import json
 import re
 import os
 from dotenv import load_dotenv as env
 import datetime
-import undetected_chromedriver as uc
-from grab import Grab
+from selenium import webdriver as wdr
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.firefox.options import Options
 
 sentlogs="./hooks/hook/contentlist.log"
 errlogs="./hooks/hook/err.log"
@@ -31,17 +32,16 @@ except Exception as ee:
       
 def new():
     link = 'https://animepahe.com/api?m=airing&page=1'
-    #webrowse= uc.Chrome(headless=True,use_subprocess=False)
-    #response=webrowse.get(link)
-    #webrowse.quit()
-    grab= Grab()
-    response = grab.request('https://animepahe.com/api?m=airing&page=1')
-    response=response.json()
-    #response = requests.get(link,headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"}).json()
-    with open(errlogs,"w") as ff:
-      ff.write(response)
-      ff.writr("\nHello")
-    #response=response.json()
+    options = Options()
+    options.add_argument("--headless")
+    pageviewer = wdr.Firefox(options=options)
+    pageviewer.get(url)
+    WebDriverWait(pageviewer, 8)
+    pageviewer.refresh()
+    rawcontent=pageviewer.page_source
+
+    jsoncontent=re.findall('<div id="json">(.*?)</div></div>', rawcontent, re.DOTALL)[0]
+    response =json.loads(jsoncontent)
     allshowsreleased=[
         [
             '{}/{}'.format(x['anime_session'], x['session']),
