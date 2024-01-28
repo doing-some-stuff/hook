@@ -1,5 +1,5 @@
 from discord_webhook import DiscordWebhook,DiscordEmbed
-import requests
+#import requests
 import json
 import re
 import os
