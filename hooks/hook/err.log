@@ -98,3 +98,4 @@ Stacktrace:
 2024-01-28 19:43:03.983890||Err: request() takes 1 positional argument but 2 were given
 2024-01-28 19:50:01.916691||Err: name 'url' is not defined
 2024-01-28 19:51:16.334624||Err: name 'url' is not defined
+2024-01-29 15:34:53.337559||Err: list index out of range
