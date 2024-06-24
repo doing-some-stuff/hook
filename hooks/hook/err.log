@@ -48,3 +48,10 @@
 2024-06-23 17:32:21.727251||Err: list index out of range
 2024-06-23 19:20:43.120138||Err: list index out of range
 2024-06-24 13:25:33.199279||Err: list index out of range
+2024-06-24 13:37:58.199607||Err: Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:740:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
+
