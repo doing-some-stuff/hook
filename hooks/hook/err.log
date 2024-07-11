@@ -111,3 +111,13 @@ bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
 2024-07-10 03:55:33.506516||Err: list index out of range
 2024-07-10 19:25:37.271233||Err: list index out of range
 2024-07-10 19:47:16.294966||Err: list index out of range
+2024-07-11 05:27:20.423567||Err: Message: Reached error page: about:neterror?e=nssFailure2&u=https%3A//animepahe.ru/api%3Fm%3Dairing%26page%3D1&c=UTF-8&d=The%20connection%20to%20animepahe.ru%20was%20interrupted%20while%20the%20page%20was%20loading.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:832:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:58:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:330:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:148:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+
