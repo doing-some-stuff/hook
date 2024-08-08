@@ -256,3 +256,4 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.
 2024-08-07 20:59:21.773842||Err: list index out of range
 2024-08-08 07:24:23.989470||Err: Message: Failed to read marionette port
 
+2024-08-08 13:58:35.145784||Err: list index out of range
