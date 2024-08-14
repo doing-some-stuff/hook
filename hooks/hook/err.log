@@ -276,3 +276,10 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.
 2024-08-12 17:36:34.671038||Err: list index out of range
 2024-08-13 16:58:35.864647||Err: list index out of range
 2024-08-13 21:16:16.982551||Err: list index out of range
+2024-08-14 11:01:40.350151||Err: Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:740:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
+
