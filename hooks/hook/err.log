@@ -360,3 +360,10 @@ bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
 2024-09-07 14:35:38.657121||Err: list index out of range
 2024-09-07 17:12:57.555933||Err: list index out of range
 2024-09-07 21:35:24.904385||Err: list index out of range
+2024-09-07 22:52:18.187896||Err: Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:740:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
+
