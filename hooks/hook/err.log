@@ -367,3 +367,4 @@ WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
 TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:740:5
 bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
 
+2024-09-08 07:30:29.645783||Err: list index out of range
